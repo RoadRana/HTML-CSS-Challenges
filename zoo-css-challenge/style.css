@@ -30,7 +30,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 0px solid #8075ff;
 }
 
 h1,
@@ -57,13 +57,16 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 7px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  background-color: #c2730d;
+  color: #fff;
+  font-size: 30px; 
+
 }
 
 footer {
@@ -75,7 +78,8 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
+.introduction { background-color: white;
+  word-spacing: 5px;
 }
 
 #badge {
@@ -83,15 +87,16 @@ footer {
   width: 120px;
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
-  position: fixed;
-  bottom: 20px;
+  display:inline-block;
+  position:fixed;
+  top: 20px;
   right: 20px;
-
+  vertical-align: top;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  transition: 0.2s;
 }
 
 #badge:hover {
@@ -105,27 +110,35 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #09287c;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
-  background-color: #0b3c49;
+  background-color: #134fc6;
   color: #f0e100;
 }
+.tigers h2 { color: white;
 
+} 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2,h3 {
+  color: #F4743B;
 }
 
+#first_paragraph{
+  font-size: 20px;
+} 
+.news{
+  text-align: center ;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -173,11 +186,19 @@ footer {
   margin-bottom: 1em;
 }
 
+
+
+.button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
 /*Membership*/
 
 .membership {
   text-align: center;
   background-color: #fffffc;
+  width: 700px;
+  margin: 150px;
 }
 
 .membership h2 {
@@ -191,5 +212,7 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display:inline-block;
+  vertical-align: top;
+  width:25%;
 }
